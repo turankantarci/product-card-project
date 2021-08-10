@@ -5,10 +5,11 @@ const $ProductDelivery = styled.div`
     display: flex;
     align-items: center;
     margin-top: .5rem;
+`
 
-    > span {
-        margin-left: .5rem;
-    }
+const $ImageWrapper = styled.div`
+    margin-right: .5rem;
+    max-height: 22px;
 `
 
 const ProductDelivery = ({ deliveryType }) => {
@@ -18,14 +19,18 @@ const ProductDelivery = ({ deliveryType }) => {
     if (deliveryType === 0) {
         deliveryInfo = (
             <$ProductDelivery>
-                <Image src={'/assets/images/delivery.svg'} width="20" height="20" />
+                <$ImageWrapper>
+                    <Image src={'/assets/images/delivery.svg'} width="22" height="22" />
+                </$ImageWrapper>
                 <span>Ücretsiz Kargo</span>
             </$ProductDelivery>
         )
     } else if (deliveryType === 1) {
         deliveryInfo = (
             <$ProductDelivery>
-                <Image src={'/assets/images/delivery.svg'} width="20" height="20" />
+                <$ImageWrapper>
+                    <Image src={'/assets/images/delivery.svg'} width="22" height="22" />
+                </$ImageWrapper>
                 <span>Ücretsiz - Aynı Gün Kargo</span>
             </$ProductDelivery>
         )
