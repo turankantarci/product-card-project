@@ -12,7 +12,6 @@ const $ProductLikeButton = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid transparent;
     background-color: #e2e2e2;
     border-radius: 50%;
 
@@ -47,7 +46,7 @@ const ProductLikeButton = ({ productId }) => {
     }
 
     return (
-        <$ProductLikeButton onClick={likeHandler}>
+        <$ProductLikeButton data-testid="productLikeButton" onClick={likeHandler}>
             {liked ? <Image src={'/assets/images/heart-fill.svg'} width="20" height="20" /> : <Image src={'/assets/images/heart.svg'} width="20" height="20" />}
         </$ProductLikeButton>
     )

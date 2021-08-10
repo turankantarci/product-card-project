@@ -9,8 +9,8 @@ const $ProductPrice = styled.div`
 
 const ProductPrice = ({ productPrice }) => {
     return (
-        <$ProductPrice>
-            {productPrice}
+        <$ProductPrice data-testid="productPrice">
+            {Number(productPrice).toLocaleString('tr-TR', { style: 'currency', currency: 'TRY' })}
         </$ProductPrice>
     )
 }

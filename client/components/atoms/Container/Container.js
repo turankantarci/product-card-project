@@ -11,7 +11,7 @@ const $Container = styled.div`
 
 const Container = ({ children }) => {
     return (
-        <$Container>
+        <$Container data-testid="container">
             {children}
         </$Container>
     )

@@ -1,16 +1,21 @@
 import { useContext } from "react";
+import styled from 'styled-components';
 import AppContext from "../../../contexts/AppContext/AppContext";
 import LikedStatus from "../../atoms/LikedStatus/LikedStatus";
 import MyLikes from "../../atoms/MyLikes/MyLikes";
+
+const $ControlBar = styled.div`
+    display: flex;
+`
 
 const ControlBar = () => {
     const {state} = useContext(AppContext);
     
     return (
-        <div>
+        <$ControlBar>
             <LikedStatus likeCount={state.likedProducts.length} />
             <MyLikes />
-        </div>
+        </$ControlBar>
     )
 }
 

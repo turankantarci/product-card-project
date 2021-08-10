@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Link from 'next/link';
 import ProductBoxWrapper from '../../atoms/ProductBoxWrapper/ProductBoxWrapper';
 import ProductImage from '../../atoms/ProductImage/ProductImage';
 import ProductTitle from '../../atoms/ProductTitle/ProductTitle';
@@ -17,9 +16,9 @@ const ProductBox = ({ product }) => {
         <ProductBoxWrapper>
             <a href={product.url} target="_blank">
                 <$ProductBox>
-                    <ProductImage src={product.image} width={250} height={250} productId={product.id} />
+                    <ProductImage src={product.image} width={250} height={250} productName={product.name} productId={product.id} />
                     <ProductTitle productName={product.name} />
-                    <ProductPrice productPrice={Number(product.price).toLocaleString('tr-TR', { style: 'currency', currency: 'TRY' })}></ProductPrice>
+                    <ProductPrice productPrice={product.price} />
                     <ProductDelivery deliveryType={product.deliveryType} />
                 </$ProductBox>
             </a>

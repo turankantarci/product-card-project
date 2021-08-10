@@ -9,6 +9,10 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  body {
+    padding: .5rem;
+  }
+
   a {
     text-decoration: none;
     color: inherit;

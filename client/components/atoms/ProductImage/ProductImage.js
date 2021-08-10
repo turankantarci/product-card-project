@@ -7,10 +7,10 @@ const $ProductImage = styled.div`
     text-align: center;
 `
 
-const ProductImage = ({ src, width, height, productId }) => {
+const ProductImage = ({ src, width, height, productName, productId }) => {
     return (
         <$ProductImage>
-            <Image src={src} width={width} height={height} />
+            <Image src={src} width={width} height={height} alt={productName} />
             <ProductLikeButton productId={productId} />
         </$ProductImage>
     )

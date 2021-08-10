@@ -18,13 +18,15 @@ const $MyLikes = styled.div`
     `}
 
     ${({ active }) => active && `
-        background: #a8ea5c;
+        background-color: #c0392b;
+        border-color: #c0392b;
+        color: #fff;
     `}
 `
 
 const MyLikes = () => {
     const [myLikesToggle, setMyLikesToggle] = useState(false);
-    const {state, dispatch} = useContext(AppContext);
+    const {dispatch} = useContext(AppContext);
 
     const myLikesHandler = () => {
         if(myLikesToggle)  {
@@ -43,7 +45,7 @@ const MyLikes = () => {
     }
 
     return (
-        <$MyLikes active={myLikesToggle} onClick={myLikesHandler}>
+        <$MyLikes active={myLikesToggle} onClick={myLikesHandler} data-testid="myLikes">
             Beğendiklerim
         </$MyLikes>
     )
