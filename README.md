@@ -2,9 +2,9 @@
 
 **- Projede kullanılan teknolojiler:**
 
-Next.js (Context API & Hooks)
-Styled Components
-GraphQL
+Next.js (Context API & Hooks),
+Styled Components,
+GraphQL,
 Apollo Server/Client
 
 ------------
