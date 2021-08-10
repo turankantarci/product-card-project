@@ -22,7 +22,7 @@ describe('<ProductBox />', () => {
 
         const imgElement = screen.getByAltText(/vestel 58U9500/i);
         const titleElement = screen.getByText(/vestel 58U9500/i);
-        const priceElement = screen.getByText(/1.234,50/i);
+        const priceElement = screen.getByTestId("productPrice");
         const deliveryElement = screen.getByText(/kargo/i);
         expect(imgElement).toBeInTheDocument();
         expect(titleElement).toBeInTheDocument();
