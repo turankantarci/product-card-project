@@ -15,10 +15,6 @@ const $RecommendedBoxWrapper = styled.div`
 const $RecommendedBox = styled.div`
     display: flex;
     flex-wrap: wrap;
-
-    @media screen and (min-width: 1230px) {
-        flex-wrap: nowrap;
-    }
 `
 
 const RecommendedBox = () => {
