@@ -5,7 +5,8 @@
 Next.js (Context API & Hooks),
 Styled Components,
 GraphQL,
-Apollo Server/Client
+Apollo Server/Client,
+Jest/Testing Library
 
 ------------
 
