@@ -1,6 +1,7 @@
 # Product Card Project
 
-**- Projede kullanılan teknolojiler**
+**- Projede kullanılan teknolojiler:**
+
 Next.js (Context API & Hooks)
 Styled Components
 GraphQL
