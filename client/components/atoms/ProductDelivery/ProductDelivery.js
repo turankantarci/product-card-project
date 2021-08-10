@@ -5,11 +5,12 @@ const $ProductDelivery = styled.div`
     display: flex;
     align-items: center;
     margin-top: .5rem;
+    min-height: 22px;
 `
 
 const $ImageWrapper = styled.div`
     margin-right: .5rem;
-    max-height: 22px;
+    height: 22px;
 `
 
 const ProductDelivery = ({ deliveryType }) => {
@@ -35,7 +36,7 @@ const ProductDelivery = ({ deliveryType }) => {
             </$ProductDelivery>
         )
     } else if (deliveryType === 2) {
-        deliveryInfo = <$ProductDelivery><span>Ücretli Kargo</span></$ProductDelivery>
+        deliveryInfo = <$ProductDelivery />
     } else {
         return null;
     }
